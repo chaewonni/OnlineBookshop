@@ -1,0 +1,20 @@
+spring:
+#  datasource:
+#    url: jdbc:h2:mem:test #이 url을 메모리로 바꾸면 됨
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#    properties:
+#      hibernate:
+#        # show_sql: true
+#        format_sql: true
+#spring부터가 별도의 설정이 없으면 메모리 모드로 돌려버림
+
+logging.level:
+  org.hibernate.SQL: debug
+  org.hibernate.orm.jdbc.bind: trace
+
+#testcase에 있는 yml이 main에 있는 yml보다 우선권을 가짐

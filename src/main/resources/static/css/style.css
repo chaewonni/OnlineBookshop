@@ -1,0 +1,85 @@
+/* 기본 바디 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.jumbotron {
+    background-color: #ffffff;
+    padding: 20px 0;
+    margin: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.jumbotron h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.jumbotron p.auth {
+    position:absolute;
+    right: 100px;
+}
+
+.jumbotron p.lead {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+.btn-dark:hover {
+    background-color: #23272b;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+/* 푸터 추가 스타일 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
