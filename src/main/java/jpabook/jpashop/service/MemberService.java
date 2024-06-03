@@ -48,12 +48,12 @@ public class MemberService {
 
     //회원 단건 조회
     public Member findOne(Long memberId){
-        return memberRepository.findOne(memberId);
+        return memberRepository.findById(memberId).get();
     }
 
     @Transactional
     public void update(Long id, String name) {
-        Member member = memberRepository.findOne(id); //member가 영속상태
+        Member member = memberRepository.findById(id).get(); //member가 영속상태
         member.setName(name); //영속 상태이므로 JPA가 플러쉬하고 영속성 컨텍스트 커밋 다 해버림
     }
 }
